@@ -13,6 +13,13 @@
 		961CA76027C3B83500FFB263 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961CA75F27C3B83500FFB263 /* Assets.xcassets */; };
 		961CA76327C3B83500FFB263 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961CA76227C3B83500FFB263 /* Preview Assets.xcassets */; };
 		961CA76627C3B83500FFB263 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961CA76427C3B83500FFB263 /* LaunchScreen.storyboard */; };
+		961CA76F27C3BCB600FFB263 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961CA76E27C3BCB600FFB263 /* HomePageView.swift */; };
+		961CA77227C3BD0100FFB263 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961CA77127C3BD0100FFB263 /* CategoriesView.swift */; };
+		961CA77627C3BD4A00FFB263 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961CA77527C3BD4A00FFB263 /* CartView.swift */; };
+		961CA77927C3C86300FFB263 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961CA77827C3C86300FFB263 /* SideMenuView.swift */; };
+		961CA77C27C3D02E00FFB263 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961CA77B27C3D02E00FFB263 /* MenuItem.swift */; };
+		9658478227C426C800F4B65A /* View+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9658478127C426C800F4B65A /* View+extension.swift */; };
+		9658479C27C4364B00F4B65A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9658479B27C4364B00F4B65A /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		961CA76227C3B83500FFB263 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		961CA76527C3B83500FFB263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		961CA76727C3B83500FFB263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		961CA76E27C3BCB600FFB263 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		961CA77127C3BD0100FFB263 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		961CA77527C3BD4A00FFB263 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		961CA77827C3C86300FFB263 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		961CA77B27C3D02E00FFB263 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		9658478127C426C800F4B65A /* View+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+extension.swift"; sourceTree = "<group>"; };
+		9658479B27C4364B00F4B65A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +70,14 @@
 		961CA75827C3B83300FFB263 /* SwiftUI Task */ = {
 			isa = PBXGroup;
 			children = (
-				961CA75927C3B83300FFB263 /* AppDelegate.swift */,
-				961CA75B27C3B83300FFB263 /* SceneDelegate.swift */,
-				961CA75D27C3B83300FFB263 /* ContentView.swift */,
-				961CA75F27C3B83500FFB263 /* Assets.xcassets */,
-				961CA76427C3B83500FFB263 /* LaunchScreen.storyboard */,
-				961CA76727C3B83500FFB263 /* Info.plist */,
+				9658478027C426AD00F4B65A /* Extension */,
+				9658478427C426F800F4B65A /* Application */,
+				9658478627C4272200F4B65A /* Resources */,
+				9658478727C4273300F4B65A /* Configuration */,
 				961CA76127C3B83500FFB263 /* Preview Content */,
+				9658478A27C427D400F4B65A /* View */,
+				9658479A27C4361900F4B65A /* Constants */,
+				9658478927C4277B00F4B65A /* Model */,
 			);
 			path = "SwiftUI Task";
 			sourceTree = "<group>";
@@ -73,6 +88,108 @@
 				961CA76227C3B83500FFB263 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9658478027C426AD00F4B65A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9658478127C426C800F4B65A /* View+extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9658478427C426F800F4B65A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				961CA75927C3B83300FFB263 /* AppDelegate.swift */,
+				961CA75B27C3B83300FFB263 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9658478627C4272200F4B65A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				961CA75F27C3B83500FFB263 /* Assets.xcassets */,
+				961CA76427C3B83500FFB263 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9658478727C4273300F4B65A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				961CA76727C3B83500FFB263 /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		9658478927C4277B00F4B65A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				961CA77B27C3D02E00FFB263 /* MenuItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9658478A27C427D400F4B65A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9658479627C4289400F4B65A /* Main view */,
+				9658478D27C427F300F4B65A /* Home */,
+				9658478E27C427FD00F4B65A /* Categories */,
+				9658479027C4280800F4B65A /* Cart */,
+				9658479227C4281300F4B65A /* Side Menu */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9658478D27C427F300F4B65A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				961CA76E27C3BCB600FFB263 /* HomePageView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9658478E27C427FD00F4B65A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				961CA77127C3BD0100FFB263 /* CategoriesView.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		9658479027C4280800F4B65A /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				961CA77527C3BD4A00FFB263 /* CartView.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		9658479227C4281300F4B65A /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				961CA77827C3C86300FFB263 /* SideMenuView.swift */,
+			);
+			path = "Side Menu";
+			sourceTree = "<group>";
+		};
+		9658479627C4289400F4B65A /* Main view */ = {
+			isa = PBXGroup;
+			children = (
+				961CA75D27C3B83300FFB263 /* ContentView.swift */,
+			);
+			path = "Main view";
+			sourceTree = "<group>";
+		};
+		9658479A27C4361900F4B65A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9658479B27C4364B00F4B65A /* Constant.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +262,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				961CA77627C3BD4A00FFB263 /* CartView.swift in Sources */,
+				961CA77927C3C86300FFB263 /* SideMenuView.swift in Sources */,
 				961CA75A27C3B83300FFB263 /* AppDelegate.swift in Sources */,
 				961CA75C27C3B83300FFB263 /* SceneDelegate.swift in Sources */,
+				961CA77227C3BD0100FFB263 /* CategoriesView.swift in Sources */,
+				961CA77C27C3D02E00FFB263 /* MenuItem.swift in Sources */,
+				961CA76F27C3BCB600FFB263 /* HomePageView.swift in Sources */,
+				9658479C27C4364B00F4B65A /* Constant.swift in Sources */,
+				9658478227C426C800F4B65A /* View+extension.swift in Sources */,
 				961CA75E27C3B83300FFB263 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +413,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Task/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SwiftUI Task/Info.plist";
+				INFOPLIST_FILE = "SwiftUI Task/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,7 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Task/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SwiftUI Task/Info.plist";
+				INFOPLIST_FILE = "SwiftUI Task/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
