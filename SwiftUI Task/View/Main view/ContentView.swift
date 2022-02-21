@@ -11,19 +11,23 @@ struct ContentView: View
     @State private var showSideMenu: Bool = false
     fileprivate func showTabView() -> some View {
         return TabView{
-            HomePageView().addTabItem(withText:"Home",imageName:"house")
+            HomePageView()
+                .onTapGesture(perform: {
+                showSideMenu = false
+            })
+          .addTabItem(withText:"Home",imageName:"house")
             CategoriesView()
+                .onTapGesture(perform: {
+                showSideMenu = false
+            })
             .addTabItem(withText:"Categories",imageName:"list.bullet")
-            CartView().addTabItem(withText:"Cart",imageName:"bag")
+            CartView()
+                .onTapGesture(perform: {
+                showSideMenu = false
+            })
+                .addTabItem(withText:"Cart",imageName:"bag")
             
         }
-        //hide side menu
-        .gesture(
-            TapGesture()
-                .onEnded { _ in
-                    showSideMenu = false
-                }
-        )
         .accentColor(.green)
     }
     
@@ -53,6 +57,7 @@ struct ContentView: View
     var body: some View{
         NavigationView
         {
+        
             ZStack{
                 showTabView()
                 GeometryReader{
@@ -60,7 +65,7 @@ struct ContentView: View
                     showSideMenuView().frame(width:geometry.size.width/2)
                 }
             }
-          
+            
             .navigationBarHidden(showSideMenu)
             .navigationBarTitle("Application", displayMode: .inline)
             .navigationBarItems(
